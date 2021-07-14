@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/3efd99c7ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/styles-nav.css">
+    <link rel="stylesheet" href="/styles/styles-header.css">
+    <link rel="stylesheet" href="/styles/styles-main.css">
+    <link rel="stylesheet" href="/styles/styles-footer.css">
+    <link rel="stylesheet" href="/styles/styles-body.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="desktop-menu">
+        <img class="logo" src="assets/logo.svg" alt="">     
+        <ul>
+            <li><a href="#episodios">EPISODIOS</a></li>
+            <li><a href="#nosotros">NOSOTROS</a></li>
+            <li><a href="#invitados">ENTREVISTAS</a></li>
+            <li><a href="#temas">TÓPICOS</a></li>
+        </ul>
+    </nav>
+    <nav class="mobile-menu">
+        <img class="logo" src="assets/logo.svg" alt="">
+        <input type="checkbox" id="menu-hamburguesa">
+        <label for="menu-hamburguesa">
+            <img src="assets/icono-hamburguesa.svg" alt="burguer">
+        </label> 
+        <ul class="nav-menu-movil" target>
+            <li><a class="opcion" href="#episodios">EPISODIOS</a></li>
+            <li><a class="opcion" href="#nosotros">NOSOTROS</a></li>
+            <li><a class="opcion" href="#invitados">ENTREVISTAS</a></li>
+            <li><a class="opcion" href="#temas">TÓPICOS</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1 >Hello
+            <span class="tachado">world</span>
+            pale blue dot<span class="punto">.</span> 
+        </h1>
+        <p>Un podcast que explora el mundo de la programación y la tecnología. Nuevos episodios, todos los jueves cada 15 días.</p>
+        <button onclick="location.href='#nosotros'" type="button">CONOCÉ MÁS</button>
+    </header>
+    <main>
+        <section id="episodios">
+            <div class="diagonal">
+                <h2>Episodios</h2>
+                <div class="box">
+                    <div class="potcasts">
+                        <iframe class="hola" src="https://open.spotify.com/embed/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="potcasts">
+                        <iframe src="https://open.spotify.com/embed/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="potcasts">
+                        <iframe src="https://open.spotify.com/embed/episode/0fVN530ZussLgy6LxecFNu" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+                    </div>
+                    <div class="potcasts">
+                        <iframe src="https://open.spotify.com/embed/episode/3bLUoqb0MzdPiNIXQWY9PJ" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>      
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <section id="nosotros">
+            <img id="telefono" src="assets/phone.png" alt="">
+            <div class="venimos">
+                <h2>De dónde venimos</h2>
+                <p>Our posturings, our imagined self-importance, the delusion that we have some privileged position in the Universe, are challenged by this point of pale light.</p>
+                <p>Our planet is a lonely speck in the great enveloping cosmic dark. In our obscurity, in all this vastness, there is no hint that help will come from elsewhere to save us from ourselves.</p>
+            </div>
+        </section>
+        <section id="invitados">
+            <h2>Invitadas/os estelares</h2>
+            <div class="contenedor">
+                <img src="assets/grace-hopper.png" alt="grace-hopper">
+                <img src="assets/Katie-Bouman.png" alt="Katie-Bouman">
+                <img src="assets/Margaret_Hamilton.png" alt="Margaret_Hamilton">
+                <img src="assets/An E.R.A.Univac 1103 computer in the 1950s.png" alt="An E.R.A.Univac 1103 computer in the 1950s">
+                <img src="assets/Computer operators with an Eniac — the world’s first programmable general-purpose computer.png" alt="Computer operators with an Eniac — the world’s first programmable general-purpose computer">
+                <img src="assets/susan-kare.png" alt="susan-kare">
+            </div>
+        </section>
+        <section id="temas"> 
+            <h2>Algunos de nuestros temas</h2>
+            <div>
+                <article>
+                    <img src="assets/icon1.svg" alt="">
+                    <h4>Trabajo remoto</h4>
+                </article>
+                <article>
+                    <img src="assets/icon2.svg" alt="">
+                    <h4>Repensando la programación</h4>
+                </article>
+                <article>
+                    <img src="assets/icon3.svg" alt="">
+                    <h4>Bases del código</h4>
+                </article>
+                <article>
+                    <img src="assets/icon4.svg" alt="">
+                    <h4>Seguridad informática</h4>
+                </article>    
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="novedades">
+            <h2>¿Querés las últimas novedades?</h2>
+            <button onclick="location.href='#episodios'" type="button">ESCUCHÁ LOS EPISODIOS</button>
+        </section>
+        <section class="datos">
+            <p>© 2019— Hello blue pale dot</p>
+            <div class="footer-iconos">
+                <a href="https://www.spotify.com/ar/" target="_blank">
+                    <svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m12 24c6.624 0 12-5.376 12-12s-5.376-12-12-12-12 5.376-12 12 5.376 12 12 12zm4.872-6.344v.001c-.807 0-3.356-2.828-10.52-1.36-.189.049-.436.126-.576.126-.915 0-1.09-1.369-.106-1.578 3.963-.875 8.013-.798 11.467 1.268.824.526.474 1.543-.265 1.543zm1.303-3.173c-.113-.03-.08.069-.597-.203-3.025-1.79-7.533-2.512-11.545-1.423-.232.063-.358.126-.576.126-1.071 0-1.355-1.611-.188-1.94 4.716-1.325 9.775-.552 13.297 1.543.392.232.547.533.547.953-.005.522-.411.944-.938.944zm-13.627-7.485c4.523-1.324 11.368-.906 15.624 1.578 1.091.629.662 2.22-.498 2.22l-.001-.001c-.252 0-.407-.063-.625-.189-3.443-2.056-9.604-2.549-13.59-1.436-.175.048-.393.125-.625.125-.639 0-1.127-.499-1.127-1.142 0-.657.407-1.029.842-1.155z"/></svg>
+                </a>
+
+                <a href="https://www.instagram.com/" target="_blank">
+                    <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M505,257c0,34.8-0.7,69.7,0.2,104.5c1.5,61.6-37.2,109.2-86.5,130.4c-19.8,8.5-40.6,13-62.1,13c-67.3,0.1-134.7,1-202-0.3   c-50.7-1-92.4-22.2-122.3-64c-15.7-22-23.2-47-23.2-74.1c0-71.7,0-143.3,0-215c0-58.5,28.5-99.4,79.1-126C110.2,14,134.1,9.1,159,9   c65.3,0,130.7-0.4,196,0.2c50.7,0.4,93,19.8,124.2,60.6c17.4,22.8,25.8,49,25.8,77.8C505,184,505,220.5,505,257z M46,257   c0,36.7,0,73.3,0,110c0,16.4,3.8,31.8,12.3,45.7c22.3,36.5,56,54.3,97.8,55c67.1,1,134.3,0.4,201.5,0.2c16.5,0,32.5-3.4,47.4-10.5   c40.6-19.4,63.3-50.3,63.1-96.7c-0.4-71-0.1-142-0.1-213c0-20.1-5.7-38.5-17.6-54.7c-23-31.1-54.8-46.4-92.8-46.8   c-67-0.8-134-0.3-201-0.2c-14.3,0-28.1,2.9-41.5,7.9c-36.8,13.7-71,48.4-69.4,99.5C46.9,188,46,222.5,46,257z"/><path d="M257.6,363c-64.5,0-116.5-51.4-116.6-115.4c-0.1-63,52.3-114.6,116.4-114.6c64.3-0.1,116.5,51.4,116.6,114.9   C374,311.3,321.9,362.9,257.6,363z M257.6,326c43.9,0,79.5-35.1,79.4-78.3c-0.1-42.8-35.7-77.8-79.4-77.8   c-43.9,0-79.7,34.9-79.7,78C178,291.1,213.7,326.1,257.6,326z"/><path d="M387.5,98c13.5,0,24.5,11.5,24.5,25.6c-0.1,14.1-11.2,25.5-24.7,25.4c-13.3-0.1-24.2-11.5-24.2-25.3   C363,109.6,374,98,387.5,98z"/></g></svg>
+                </a>
+
+                <a href="https://twitter.com/" target="_blank">
+                    <svg height="681pt" viewBox="-21 -81 681.33464 681" width="681pt" xmlns="http://www.w3.org/2000/svg"><path d="m200.964844 515.292969c241.050781 0 372.871094-199.703125 372.871094-372.871094 0-5.671875-.117188-11.320313-.371094-16.9375 25.585937-18.5 47.824218-41.585937 65.371094-67.863281-23.480469 10.441406-48.753907 17.460937-75.257813 20.636718 27.054687-16.230468 47.828125-41.894531 57.625-72.488281-25.320313 15.011719-53.363281 25.917969-83.214844 31.808594-23.914062-25.472656-57.964843-41.402344-95.664062-41.402344-72.367188 0-131.058594 58.6875-131.058594 131.03125 0 10.289063 1.152344 20.289063 3.398437 29.882813-108.917968-5.480469-205.503906-57.625-270.132812-136.921875-11.25 19.363281-17.742188 41.863281-17.742188 65.871093 0 45.460938 23.136719 85.605469 58.316407 109.082032-21.5-.660156-41.695313-6.5625-59.351563-16.386719-.019531.550781-.019531 1.085937-.019531 1.671875 0 63.46875 45.171875 116.460938 105.144531 128.46875-11.015625 2.996094-22.605468 4.609375-34.558594 4.609375-8.429687 0-16.648437-.828125-24.632812-2.363281 16.683594 52.070312 65.066406 89.960937 122.425781 91.023437-44.855469 35.15625-101.359375 56.097657-162.769531 56.097657-10.5625 0-21.003906-.605469-31.2617188-1.816407 57.9999998 37.175781 126.8710938 58.871094 200.8867188 58.871094"/></svg>
+                </a>
+
+                <a href="https://www.facebook.com/" target="_blank"> 
+                    <svg id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m512 256c0-141.4-114.6-256-256-256s-256 114.6-256 256 114.6 256 256 256c1.5 0 3 0 4.5-.1v-199.2h-55v-64.1h55v-47.2c0-54.7 33.4-84.5 82.2-84.5 23.4 0 43.5 1.7 49.3 2.5v57.2h-33.6c-26.5 0-31.7 12.6-31.7 31.1v40.8h63.5l-8.3 64.1h-55.2v189.5c107-30.7 185.3-129.2 185.3-246.1z"/></svg>
+                </a>
+
+                <a href="https://telegram.org/" target="_blank">                    
+                    <svg id="Bold" enable-background="new 0 0 24 24" height="512" viewBox="0 0 24 24" width="512" xmlns="http://www.w3.org/2000/svg"><path d="m12 24c6.629 0 12-5.371 12-12s-5.371-12-12-12-12 5.371-12 12 5.371 12 12 12zm-6.509-12.26 11.57-4.461c.537-.194 1.006.131.832.943l.001-.001-1.97 9.281c-.146.658-.537.818-1.084.508l-3-2.211-1.447 1.394c-.16.16-.295.295-.605.295l.213-3.053 5.56-5.023c.242-.213-.054-.333-.373-.121l-6.871 4.326-2.962-.924c-.643-.204-.657-.643.136-.953z"/></svg>
+                </a>
+
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

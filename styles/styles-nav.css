@@ -1,0 +1,131 @@
+.desktop-menu {
+    display: flex;
+    justify-content: flex-end;
+    background: #FFFFFF;
+    height: 80px;
+    width: 100%;
+    align-items: center;
+    padding-right: 100px;
+}
+
+.desktop-menu .logo {
+    position: absolute;
+    top: 25px;
+    left: 100px;
+    position: 100px;
+    width: 36px;
+}
+
+.desktop-menu ul {
+    display: flex;
+}
+
+.desktop-menu li {
+    list-style-type: none;
+    cursor: pointer;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    color:#060A24;
+    margin-left: 48px;
+    text-decoration-line: none;
+}
+
+.desktop-menu a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #00F3BB;
+    text-decoration: line-through;
+    cursor: pointer;
+}
+
+
+
+
+.mobile-menu {  
+    position: absolute;
+    top: 0px;
+    background: #FFFFFF;
+    height: 100%;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.mobile-menu .logo {
+    height: 24px;
+    margin-left: 5%;
+}
+
+.mobile-menu label {
+    margin-left: 75.9% ;
+}
+
+.mobile-menu ul {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    background: #0000FF;
+    margin-top:  7px;
+}
+
+.mobile-menu li{
+    list-style-type: none;
+    cursor: pointer;
+    margin: 10px 20px;
+    text-decoration-line: none;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+
+#menu-hamburguesa {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+    overflow: hidden;
+}
+
+.nav-menu-movil {
+    transform: translateX(100%);
+    transition: all 0.3s ease;
+}
+
+@media screen and (max-width: 999px) {
+    .desktop-menu {
+        padding-right: 20px;
+    }
+    .desktop-menu .logo {
+        left: 16px;
+        width: 36px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .mobile-menu {
+        display: block;
+    }
+
+    .desktop-menu {
+        display: none;
+    }
+
+    #menu-hamburguesa:checked ~ .nav-menu-movil {
+        display: block;
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+
+    
