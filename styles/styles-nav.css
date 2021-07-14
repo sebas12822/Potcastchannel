@@ -68,12 +68,13 @@ a:hover {
     width: 100%;
     background: #0000FF;
     margin-top:  7px;
+    padding-top: 16px;
 }
 
 .mobile-menu li{
     list-style-type: none;
     cursor: pointer;
-    margin: 10px 20px;
+    margin: 0px 20px 24px;
     text-decoration-line: none;
 }
 

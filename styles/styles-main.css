@@ -254,8 +254,7 @@ section div.diagonal h2 {
     #invitados h2 {
         font-size: 36px;
         line-height: 42px;
-        padding-bottom: 14px;
-        padding-left: 16px;
+        padding: 14px 16px 0px;
         font-weight: 400;
     }
     
@@ -303,7 +302,7 @@ section div.diagonal h2 {
     }
 
     #temas div article h4 {
-        width: 280px;
+        width: 300px;
     }
 
 }
