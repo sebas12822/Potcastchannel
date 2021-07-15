@@ -1,10 +1,9 @@
 .diagonal {
     position: absolute;
-    height: 100%;
     width: 100%;
     background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-    clip-Path: polygon(0% 10%, 100% 0%, 100% 90%, 0% 100%);
-    height: 1042.6px
+    clip-Path: polygon(0% 13%, 100% 0%, 100% 87%, 0% 100%);
+    height: 950px
 }
 
 section div.diagonal h2 {
@@ -25,12 +24,12 @@ section div.diagonal h2 {
 .potcasts {
     width:  100%;
     margin-right: 72px;
-    margin-bottom: 72px;
+    padding-bottom: 70px;
 }
 
 #nosotros {
     position: relative; 
-    top: 874px;
+    top: 870px;
     display: flex;
     width: 100%;
     justify-content: center;
@@ -91,9 +90,7 @@ section div.diagonal h2 {
 }
 
 #temas {
-    position: relative;
-    top: 990px;
-    padding-left: 200px;
+    padding: 1000px 200px 0px;
 }
 
 #temas h2 {
@@ -104,36 +101,59 @@ section div.diagonal h2 {
     letter-spacing: 0;  
     font-weight: 400;
     margin-bottom: 56px;
+    
 }
 
-#temas div {
+
+#temas div.contenedor-temas {
     display: flex;
+    justify-content: space-around;
 }
 
-#temas div article {
+#temas div.contenedor-temas div.box-temas{
+    display: flex;
+    justify-content: center;
+}
+
+#temas div.contenedor-temas div.box-temas article {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 130px;
-    width: 260px;
+ 
 }
 
-#temas div article img {
+#temas div.contenedor-temas div.box-temas article img {
     width: 104px;
-    margin: 69px 0px 29px;
+    margin-bottom: 29px;
 }
 
-#temas div article h4 {
+#temas div.contenedor-temas div article h4 {
     font-family: "IBM Plex Sans", monospace;
     font-size: 24px;
     color: #060A24;
     font-weight: 600;
     text-align: center;
+    width: 220px;
 }
 
-@media screen and (max-width: 999px) {
-    
+@media screen and (max-width: 1199px) {
+
+
+
+    section div.diagonal h2 {
+        padding-left: 100px;
+    }
+
+
+
+    #invitados h2 {
+        padding-left: 100px;
+    }
+
+    #temas {
+        padding: 1000px 100px 0px;
+    }
 }
 
 @media screen and (max-width: 999px) {
@@ -151,11 +171,18 @@ section div.diagonal h2 {
         width:  100%;
         margin-right: 16px;
         margin-bottom: 16px;
+        height: 230px;
     }
 
-    #telefono {
-        max-width:350px; 
+    #nosotros {
+        top: 800px;
     }
+    
+
+    #telefono {
+        max-width: 350px; 
+    }
+    
     
     .venimos {
         max-width:  464px;
@@ -163,61 +190,147 @@ section div.diagonal h2 {
         margin-right: 16px;
     }
 
-    #invitados h2 {
-        padding-left: 16px;
+    #invitados {
+        top: 838px;
     }
 
     #temas {
-        padding-left: 16px;
+        padding: 900px 16px 0px;
     }
 
 }
 
-@media screen and (max-width: 500px) {
-    .diagonal {
-        position: absolute;
-        top: 347px;
+@media screen and (max-width: 899px) {
+
+    #invitados h2 {
+        padding-left: 16px;
+    }
+
+    #nosotros {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0px;
+        padding: 0px 16px;
+    }
+
+    #nosotros .venimos{
+        max-width: 100%;
+    }
+
+
+    #invitados div img{
+        max-width:50%; 
+    }
+
+    #temas div.contenedor-temas {
+        flex-wrap: wrap;
+
+    }
+    
+    #temas div.contenedor-temas div.box-temas {   
         height: 100%;
         width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #temas div.contenedor-temas div.box-temas-2 {   
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .diagonal {
+        position: absolute;
+        top: 300px;
         background-image: linear-gradient(225deg, #0000FF 0%, #0000A3 100%);
-        clip-Path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%);
-        height: 1203.5px;
+        clip-Path: polygon(0% 6%, 100% 0%, 100% 94%, 0% 100%);
+        height: 880px;
         padding: 0px;
     }
     
     section div.diagonal h2 {
         position: relative;
         font-size: 36px;
+        padding: 100px 0px 21px 16px;
+    }
+
+    
+    #telefono {
+        max-width:300px; 
+    }
+
+    .venimos {
+        display: block;
+        height: auto;
+        width:  100%;
+        margin: 0px;
+        padding: 0 16px;
+    }
+    
+    .venimos h2 {
+        font-family: "IBM Plex Sans", monospace;
+        font-size: 36px;
+        line-height: 42px;
+        letter-spacing: 0;
+        font-weight: 400;
+        margin-bottom: 8px;
+        margin-top: 27px;
+    }
+    
+    .venimos p {
+        font-family: "IBM Plex Sans", monospace;
+        font-size: 14px;
+        line-height: 24px;
+        color: #060A24;
+        padding-bottom: 12px;
+    }
+    
+
+    
+    #invitados h2 {
+        font-size: 36px;
+        line-height: 42px;
+        padding: 14px 16px 24px;
+        font-weight: 400;
+
+        
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .diagonal {
+        top: 300px;
+        clip-Path: polygon(0% 4%, 100% 0%, 100% 96%, 0% 100%);
+        height: 1280px;
+    }
+    
+    section div.diagonal h2 {
+        font-size: 36px;
         padding: 80px 0px 21px 16px;
     }
+    
     .box {
-        position: relative;
         display: flex;
         flex-direction: column;
         padding: 0px 11px;
     }
     
-    .potcasts {
-        width:  100%;
-        margin-right: 0px;
-        margin-bottom: 5px;
-    }
     
     #nosotros {
         position: relative;
         display: flex;
         flex-direction: column;
         position: relative; 
-        top: 1200px;
+        top: 1250px;
         margin: 0px;
         padding: 0px;
 
     }
     
     #telefono {
-        max-width:100%; 
-        margin: 0px;
-        padding: 0px;
+        max-width:360px; 
     }
     
     .venimos {
@@ -245,34 +358,23 @@ section div.diagonal h2 {
         color: #060A24;
         padding-bottom: 12px;
     }
-    
-    #invitados {
-        position: relative;
-        top: 1238px;
-    }
-    
-    #invitados h2 {
-        font-size: 36px;
-        line-height: 42px;
-        padding: 14px 16px 0px;
-        font-weight: 400;
-    }
-    
+
     .contenedor {
         display:flex;
         flex-direction: column;
     }
-    
+    #invitados {
+        top: 1280px;
+    }
+
     #invitados div img{
         max-width:100%; 
     }
-    
+
     #temas {
-        position: relative;
-        top: 1300px;
-        padding-left: 0px;
+        padding-top: 1320px;
     }
-    
+
     #temas h2 {
         font-size: 36px;
         line-height: 42px;
@@ -280,10 +382,21 @@ section div.diagonal h2 {
         margin-bottom: 56px;
         margin: 0px 16px 24px;
     }
-    
+
     #temas div {
         display: flex;
         flex-direction: column;
+    }
+    
+    .contenedor-temas {
+        padding: 0px;
+        margin: 0px; 
+        display: block;
+    }
+
+    .box-temas {
+        padding: 0px;
+        margin: 0px;
     }
     
     #temas div article {
@@ -291,18 +404,39 @@ section div.diagonal h2 {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        height: 25%;
+        height: 100%;
         width: 100%;
         margin-bottom: 52px;
     }
     
+    
     #temas div article img {
         width: 104px;
-        margin: 13px 0px;
+        margin: 0px;
     }
 
     #temas div article h4 {
         width: 300px;
+        padding:0px;
+        margin: 0px;
     }
 
+}
+
+@media screen and (max-width: 436px) {
+    .diagonal {
+        top: 350px;
+    }
+}
+
+@media screen and (max-width: 287px) {
+    .diagonal {
+        top: 380px;
+    }
+}
+
+@media screen and (max-width: 247px) {
+    .diagonal {
+        top: 420px;
+    }
 }

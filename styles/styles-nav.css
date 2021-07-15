@@ -55,11 +55,13 @@ a:hover {
 
 .mobile-menu .logo {
     height: 24px;
-    margin-left: 5%;
+    margin-left: 2%;
 }
 
 .mobile-menu label {
-    margin-left: 75.9% ;
+    position: relative;
+    top: -6px;
+    left: 90%;
 }
 
 .mobile-menu ul {
@@ -110,7 +112,7 @@ a:hover {
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 750px) {
     .mobile-menu {
         display: block;
     }
@@ -125,8 +127,22 @@ a:hover {
     }
 }
 
+@media screen and (max-width: 650px) {
+    .mobile-menu label {
+        left: 88%;
+    }
+}
 
 
+@media screen and (max-width: 480px) {
+    .mobile-menu label {
+        left: 85%;
+    }
+}
 
-
+@media screen and (max-width: 407px) {
+    .mobile-menu label {
+        left: 80%;
+    }
+}
     
