@@ -22,18 +22,22 @@
             <li><a href="#temas">TÓPICOS</a></li>
         </ul>
     </nav>
-    <nav class="mobile-menu">
-        <img class="logo" src="assets/logo.svg" alt="">
-        <input type="checkbox" id="menu-hamburguesa">
-        <label for="menu-hamburguesa">
-            <img src="assets/icono-hamburguesa.svg" alt="burguer">
-        </label> 
-        <ul class="nav-menu-movil" target>
-            <li><a class="opcion" href="#episodios">EPISODIOS</a></li>
-            <li><a class="opcion" href="#nosotros">NOSOTROS</a></li>
-            <li><a class="opcion" href="#invitados">ENTREVISTAS</a></li>
-            <li><a class="opcion" href="#temas">TÓPICOS</a></li>
-        </ul>
+    <nav  >
+        <div id="mobile-menu">
+            <img class="logo" src="assets/logo.svg" alt="">
+            <input type="checkbox" id="menu-hamburguesa">
+            <label for="menu-hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label> 
+            <ul class="nav-menu-movil" >
+                <li><a class="opcion" href="#episodios">EPISODIOS</a></li>
+                <li><a class="opcion" href="#nosotros">NOSOTROS</a></li>
+                <li><a class="opcion" href="#invitados">ENTREVISTAS</a></li>
+                <li><a class="opcion" href="#temas">TÓPICOS</a></li>
+            </ul>
+        </div>
     </nav>
     <header>
         <h1 >Hello
@@ -47,21 +51,11 @@
         <section id="episodios">
             <div class="diagonal">
                 <h2>Episodios</h2>
-                <div class="box">
-                    <div class="potcasts">
-                        <iframe class="hola" src="https://open.spotify.com/embed/episode/7AZZy2nJ4R9ZndHW0h2yxt" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
-                    <div class="potcasts">
-                        <iframe src="https://open.spotify.com/embed/episode/1ezdL2ivAGLwSE6Xbssxqt" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
-                </div>
-                <div class="box">
-                    <div class="potcasts">
-                        <iframe src="https://open.spotify.com/embed/episode/0fVN530ZussLgy6LxecFNu" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-                    </div>
-                    <div class="potcasts">
-                        <iframe src="https://open.spotify.com/embed/episode/3bLUoqb0MzdPiNIXQWY9PJ" width="100%" height="232" frameBorder="0" allowtransparency="true" allow="encrypted-media"></iframe>      
-                    </div>
+                <div class="potcasts">
+                    <iframe src="https://open.spotify.com/embed/episode/7AZZy2nJ4R9ZndHW0h2yxt"></iframe>
+                    <iframe src="https://open.spotify.com/embed/episode/1ezdL2ivAGLwSE6Xbssxqt"></iframe>
+                    <iframe src="https://open.spotify.com/embed/episode/0fVN530ZussLgy6LxecFNu"></iframe>
+                    <iframe src="https://open.spotify.com/embed/episode/3bLUoqb0MzdPiNIXQWY9PJ"></iframe>      
                 </div>
             </div>            
         </section>
@@ -87,26 +81,23 @@
         <section id="temas"> 
             <h2>Algunos de nuestros temas</h2>
             <div class="contenedor-temas">
-                <div class="box-temas">
-                    <article>
-                        <img src="assets/icon1.svg" alt="">
-                        <h4>Trabajo remoto</h4>
-                    </article>
-                    <article>
-                        <img src="assets/icon2.svg" alt="">
-                        <h4>Repensando la programación</h4>
-                    </article>
-                </div>
-                <div class="box-temas box-temas-2">
-                    <article>
-                        <img src="assets/icon3.svg" alt="">
-                        <h4>Bases del código</h4>
-                    </article>
-                    <article>
-                        <img src="assets/icon4.svg" alt="">
-                        <h4>Seguridad informática</h4>
-                    </article>    
-                </div>
+                <article>
+                    <img src="assets/icon1.svg" alt="">
+                    <h4>Trabajo remoto</h4>
+                </article>
+                <article>
+                    <img src="assets/icon2.svg" alt="">
+                    <h4>Repensando la programación</h4>
+                </article>
+
+                <article>
+                    <img src="assets/icon3.svg" alt="">
+                    <h4>Bases del código</h4>
+                </article>
+                <article>
+                    <img src="assets/icon4.svg" alt="">
+                    <h4>Seguridad informática</h4>
+                </article>    
             </div>
         </section>
     </main>
